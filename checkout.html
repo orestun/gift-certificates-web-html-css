@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/checkout.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <img src="img/logo1.png" alt="logo" width=60>
+    <nav>
+        <ul>
+            <li><a href="index.html">Main</a></li>
+            <li><a href="adding_new_item.html">Add new item</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+        </ul>
+    </nav>
+    <div class="search_field">
+        <form action="#">
+            <input type="search" name="search_certificate" placeholder="Type item name to find...">
+            <select name="category" autocomplete="off">
+                <option value="" selected disabled hidden>Category</option>
+                <option value="sport">Sport</option>
+                <option value="cars">Cars</option>
+                <option value="shop">Shop</option>
+                <option value="cloth">Cloth</option>
+                <option value="cloth">Cloth</option>
+                <option value="">none</option>
+            </select>
+            <button type="submit"><img src="img/search_logo.png" alt="search_logo"></button>
+        </form>
+    </div>
+    <div class="right_panel">
+        <a href="#"><img src="img/heart2.png" alt="liked_items"></a>
+        <a href="checkout.html"><img src="img/shopping_cart.png" alt="checkout"></a>
+        <a href="login.html">Login</a>
+        <div class="vertical"></div>
+        <a href="register.html">Sign in</a>
+    </div>
+</header>
+<div class="checkout_title">
+    <h4>Checkout</h4>
+</div>
+<div class="checkout_container">
+    <div class="item">
+        <div class="image">
+            <img src="img/image_blue.png" alt="image">
+        </div>
+        <div class="description_container">
+            <h3 class="name">Coupon name</h3>
+            <p class="description" >Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam
+            </p>
+        </div>
+        <div class="price">
+            <h3>200$</h3>
+        </div>
+    </div>
+    <div class="item">
+        <div class="image">
+            <img src="img/image_blue.png" alt="image">
+        </div>
+        <div class="description_container">
+            <h3 class="name">Coupon name</h3>
+            <p class="description">Convallis tellus id interdum velit laoreet id. In
+                vitae turpis massa sed elementum. Aliquam vestibulum morbi blandit cursus risus at.
+            </p>
+        </div>
+        <div class="price">
+            <h3>130$</h3>
+        </div>
+    </div>
+    <div class="item">
+        <div class="image">
+            <img src="img/image_blue.png" alt="image">
+        </div>
+        <div class="description_container">
+            <h3 class="name">Coupon name</h3>
+            <p class="description">Risus pretium quam vulputate dignissim suspendisse in.
+            </p>
+        </div>
+        <div class="price">
+            <h3>40$</h3>
+        </div>
+    </div>
+    <div class="item total_price_item">
+        <div class="total">
+            <h3 class="total_title">Total</h3>
+            <h3 id="total_price"></h3>
+        </div>
+    </div>
+    <div class="item">
+        <div class="checkout_buttons">
+            <button class="cansel_button" type="submit">Cansel</button>
+            <button class="checkout_button" type="submit">Checkout</button>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    var priceElements = document.getElementsByClassName('price');
+
+    var total = 0;
+    for (var i = 0; i < priceElements.length; i++) {
+        var price = parseFloat(priceElements[i].textContent.substring(0, priceElements[i].textContent.length-2));
+        total += price;
+    }
+
+    var totalElement = document.getElementById('total_price')
+    totalElement.textContent += total + '$';
+</script>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Certificates - Register</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/registration.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <img src="img/logo1.png" alt="logo" width=60>
+    <nav>
+        <ul>
+            <li><a href="index.html">Main</a></li>
+            <li><a href="adding_new_item.html">Add new item</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+        </ul>
+    </nav>
+    <div class="search_field">
+        <form action="#">
+            <input type="search" name="search_certificate" placeholder="Type item name to find...">
+            <select name="category" autocomplete="off">
+                <option value="" selected disabled hidden>Category</option>
+                <option value="sport">Sport</option>
+                <option value="cars">Cars</option>
+                <option value="shop">Shop</option>
+                <option value="cloth">Cloth</option>
+                <option value="cloth">Cloth</option>
+                <option value="">none</option>
+            </select>
+            <button type="submit"><img src="img/search_logo.png" alt="search_logo"></button>
+        </form>
+    </div>
+    <div class="right_panel">
+        <a href="#"><img src="img/heart2.png" alt="liked_items"></a>
+        <a href="checkout.html"><img src="img/shopping_cart.png" alt="checkout"></a>
+        <a href="login.html">Login</a>
+        <div class="vertical"></div>
+        <a href="register.html">Sign in</a>
+    </div>
+</header>
+<div class="register_form">
+    <h3 class="form_title">Register</h3>
+    <form action="#">
+        <div class="input_fields">
+            <div class="register_field">
+                <label for="firth_name">Firth name</label>
+                <input type="text" id="firth_name" name="firthName" >
+            </div>
+            <div class="register_field">
+                <label for="second_name">Second name</label>
+                <input type="text" id="second_name" name="secondName" >
+            </div>
+            <div class="register_field">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="register_field">
+                <label for="repeat_password">Repeat password</label>
+                <input type="password" id="repeat_password" name="repeatPassword">
+            </div>
+            <div class="register_field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="register_field">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address">
+            </div>
+            <div class="register_field"></div>
+            <div class="register_buttons">
+                <button class="cansel_button" type="submit">Cansel</button>
+                <button class="sign_in_button" type="submit">Sign Up</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

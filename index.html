@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Certificates</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/index_style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <img src="img/logo1.png" alt="logo" width=60>
+    <nav>
+        <ul>
+            <li><a href="index.html">Main</a></li>
+            <li><a href="adding_new_item.html">Add new item</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+        </ul>
+    </nav>
+    <div class="search_field">
+        <form action="#">
+            <input type="search" name="search_certificate" placeholder="Type item name to find...">
+            <select name="category" autocomplete="off">
+                <option value="" selected disabled hidden>Category</option>
+                <option value="sport">Sport</option>
+                <option value="cars">Cars</option>
+                <option value="shop">Shop</option>
+                <option value="cloth">Cloth</option>
+                <option value="cloth">Cloth</option>
+                <option value="">none</option>
+            </select>
+            <button type="submit"><img src="img/search_logo.png" alt="search_logo"></button>
+        </form>
+    </div>
+    <div class="right_panel">
+        <a href="#"><img src="img/heart2.png" alt="liked_items"></a>
+        <a href="checkout.html"><img src="img/shopping_cart.png" alt="checkout"></a>
+        <a href="login.html">Login</a>
+        <div class="vertical"></div>
+        <a href="register.html">Sign in</a>
+    </div>
+</header>
+<div class="category_container">
+    <div class="categories">
+        <a href="#">
+            <div class="category">
+                <img src="img/image_icon.png"  alt="category_logo">
+                <h6>Category</h6>
+            </div>
+        </a>
+        <a href="#">
+            <div class="category">
+                <img src="img/image_icon.png"  alt="category_logo">
+                <h6>Category</h6>
+            </div>
+        </a>
+        <a href="#">
+            <div class="category">
+                <img src="img/image_icon.png"  alt="category_logo">
+                <h6>Category</h6>
+            </div>
+        </a>
+        <a href="#">
+            <div class="category">
+                <img src="img/image_icon.png"  alt="category_logo">
+                <h6>Category</h6>
+            </div>
+        </a>
+        <a href="#">
+            <div class="category">
+                <img src="img/image_icon.png"  alt="category_logo">
+                <h6>Category</h6>
+            </div>
+        </a>
+        <a href="#">
+            <div class="category">
+                <img src="img/image_icon.png"  alt="category_logo">
+                <h6>Category</h6>
+            </div>
+        </a>
+        <a href="#">
+            <div class="category">
+                <img src="img/image_icon.png"  alt="category_logo">
+                <h6>Category</h6>
+            </div>
+        </a>
+    </div>
+</div>
+<div class="cards_container">
+        <div class="card">
+            <a class="main_image_link" href="#">
+                <img class="main_image" src="img/image_blue.png" alt="main_image">
+            </a>
+            <div class="card_info">
+                <div class="card_info_row">
+                    <h3 class="name">Coupon name</h3>
+                    <a href="#">
+                        <img class="favourite_icon" src="img/favourite_icon.png" alt="favourite" onclick="clickOnFavourite(0); return false">
+                    </a>
+                </div>
+                <div class="card_info_row">
+                    <p class="description">Some brief description</p>
+                    <p class="expiration">Expired in 3 days</p>
+                </div>
+                <div class="card_info_row last_row">
+                    <h3 class="price">$235</h3>
+                    <a href="#" class="button">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <a class="main_image_link" href="#">
+                <img class="main_image" src="img/image_red.png" alt="main_image">
+            </a>
+            <div class="card_info">
+                <div class="card_info_row">
+                    <h3 class="name">Coupon name</h3>
+                    <a href="#">
+                        <img class="favourite_icon" src="img/favourite_icon.png" alt="favourite" onclick="clickOnFavourite(1); return false">
+                    </a>
+                </div>
+                <div class="card_info_row">
+                    <p class="description">Some brief description</p>
+                    <p class="expiration">Expired in 3 days</p>
+                </div>
+                <div class="card_info_row last_row">
+                    <h3 class="price">$235</h3>
+                    <a href="#" class="button">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <a class="main_image_link" href="#">
+                <img class="main_image" src="img/image_blue.png" alt="main_image">
+            </a>
+            <div class="card_info">
+                <div class="card_info_row">
+                    <h3 class="name">Coupon name</h3>
+                    <a href="#">
+                        <img class="favourite_icon" src="img/favourite_icon.png" alt="favourite" onclick="clickOnFavourite(2); return false">
+                    </a>
+                </div>
+                <div class="card_info_row">
+                    <p class="description">Some brief description</p>
+                    <p class="expiration">Expired in 3 days</p>
+                </div>
+                <div class="card_info_row last_row">
+                    <h3 class="price">$235</h3>
+                    <a href="#" class="button">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <a class="main_image_link" href="#">
+                <img class="main_image" src="img/image_red.png" alt="main_image">
+            </a>
+            <div class="card_info">
+                <div class="card_info_row">
+                    <h3 class="name">Coupon name</h3>
+                    <a href="#">
+                        <img class="favourite_icon" src="img/favourite_icon.png" alt="favourite" onclick="clickOnFavourite(3); return false">
+                    </a>
+                </div>
+                <div class="card_info_row">
+                    <p class="description">Some brief description</p>
+                    <p class="expiration">Expired in 3 days</p>
+                </div>
+                <div class="card_info_row last_row">
+                    <h3 class="price">$235</h3>
+                    <a href="#" class="button">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <a class="main_image_link" href="#">
+                <img class="main_image" src="img/image_blue.png" alt="main_image">
+            </a>
+            <div class="card_info">
+                <div class="card_info_row">
+                    <h3 class="name">Coupon name</h3>
+                    <a href="#">
+                        <img class="favourite_icon" src="img/favourite_icon.png" alt="favourite" onclick="clickOnFavourite(4); return false">
+                    </a>
+                </div>
+                <div class="card_info_row">
+                    <p class="description">Some brief description</p>
+                    <p class="expiration">Expired in 3 days</p>
+                </div>
+                <div class="card_info_row last_row">
+                    <h3 class="price">$235</h3>
+                    <a href="#" class="button">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <a class="main_image_link" href="#">
+                <img class="main_image" src="img/image_red.png" alt="main_image">
+            </a>
+            <div class="card_info">
+                <div class="card_info_row">
+                    <h3 class="name">Coupon name</h3>
+                    <a href="#">
+                        <img class="favourite_icon" src="img/favourite_icon.png" alt="favourite" onclick="clickOnFavourite(5); return false">
+                    </a>
+                </div>
+                <div class="card_info_row">
+                    <p class="description">Some brief description</p>
+                    <p class="expiration">Expired in 3 days</p>
+                </div>
+                <div class="card_info_row last_row">
+                    <h3 class="price">$235</h3>
+                    <a href="#" class="button">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    <div class="card">
+        <a class="main_image_link" href="#">
+            <img class="main_image" src="img/image_blue.png" alt="main_image">
+        </a>
+        <div class="card_info">
+            <div class="card_info_row">
+                <h3 class="name">Coupon name</h3>
+                <a href="#">
+                    <img class="favourite_icon" src="img/favourite_icon.png" alt="favourite" onclick="clickOnFavourite(6); return false">
+                </a>
+            </div>
+            <div class="card_info_row">
+                <p class="description">Some brief description</p>
+                <p class="expiration">Expired in 3 days</p>
+            </div>
+            <div class="card_info_row last_row">
+                <h3 class="price">$235</h3>
+                <a href="#" class="button">Add to cart</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <a class="main_image_link" href="#">
+            <img class="main_image" src="img/image_red.png" alt="main_image">
+        </a>
+        <div class="card_info">
+            <div class="card_info_row">
+                <h3 class="name">Coupon name</h3>
+                <a href="#">
+                    <img class="favourite_icon" src="img/favourite_icon.png" alt="favourite" onclick="clickOnFavourite(7); return false">
+                </a>
+            </div>
+            <div class="card_info_row">
+                <p class="description">Some brief description</p>
+                <p class="expiration">Expired in 3 days</p>
+            </div>
+            <div class="card_info_row last_row">
+                <h3 class="price">$235</h3>
+                <a href="#" class="button">Add to cart</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <a class="main_image_link" href="#">
+            <img class="main_image" src="img/image_blue.png" alt="main_image">
+        </a>
+        <div class="card_info">
+            <div class="card_info_row">
+                <h3 class="name">Coupon name</h3>
+                <a href="#">
+                    <img class="favourite_icon" src="img/favourite_icon.png" alt="favourite" onclick="clickOnFavourite(8); return false">
+                </a>
+            </div>
+            <div class="card_info_row">
+                <p class="description">Some brief description</p>
+                <p class="expiration">Expired in 3 days</p>
+            </div>
+            <div class="card_info_row last_row">
+                <h3 class="price">$235</h3>
+                <a href="#" class="button">Add to cart</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <a class="main_image_link" href="#">
+            <img class="main_image" src="img/image_red.png" alt="main_image">
+        </a>
+        <div class="card_info">
+            <div class="card_info_row">
+                <h3 class="name">Coupon name</h3>
+                <a href="#">
+                    <img class="favourite_icon" src="img/favourite_icon.png" alt="favourite" onclick="clickOnFavourite(9); return false">
+                </a>
+            </div>
+            <div class="card_info_row">
+                <p class="description">Some brief description</p>
+                <p class="expiration">Expired in 3 days</p>
+            </div>
+            <div class="card_info_row last_row">
+                <h3 class="price">$235</h3>
+                <a href="#" class="button">Add to cart</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <a class="main_image_link" href="#">
+            <img class="main_image" src="img/image_blue.png" alt="main_image">
+        </a>
+        <div class="card_info">
+            <div class="card_info_row">
+                <h3 class="name">Coupon name</h3>
+                <a href="#">
+                    <img class="favourite_icon" src="img/favourite_icon.png" alt="favourite" onclick="clickOnFavourite(10); return false">
+                </a>
+            </div>
+            <div class="card_info_row">
+                <p class="description">Some brief description</p>
+                <p class="expiration">Expired in 3 days</p>
+            </div>
+            <div class="card_info_row last_row">
+                <h3 class="price">$235</h3>
+                <a href="#" class="button">Add to cart</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <a class="main_image_link" href="#">
+            <img class="main_image" src="img/image_red.png" alt="main_image">
+        </a>
+        <div class="card_info">
+            <div class="card_info_row">
+                <h3 class="name">Coupon name</h3>
+                <a href="#">
+                    <img class="favourite_icon" src="img/favourite_icon.png" alt="favourite" onclick="clickOnFavourite(11); return false">
+                </a>
+            </div>
+            <div class="card_info_row">
+                <p class="description">Some brief description</p>
+                <p class="expiration">Expired in 3 days</p>
+            </div>
+            <div class="card_info_row last_row">
+                <h3 class="price">$235</h3>
+                <a href="#" class="button">Add to cart</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <a class="main_image_link" href="#">
+            <img class="main_image" src="img/image_blue.png" alt="main_image">
+        </a>
+        <div class="card_info">
+            <div class="card_info_row">
+                <h3 class="name">Coupon name</h3>
+                <a href="#">
+                    <img class="favourite_icon" src="img/favourite_icon.png" alt="favourite" onclick="clickOnFavourite(12); return false">
+                </a>
+            </div>
+            <div class="card_info_row">
+                <p class="description">Some brief description</p>
+                <p class="expiration">Expired in 3 days</p>
+            </div>
+            <div class="card_info_row last_row">
+                <h3 class="price">$235</h3>
+                <a href="#" class="button">Add to cart</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <a class="main_image_link" href="#">
+            <img class="main_image" src="img/image_red.png" alt="main_image">
+        </a>
+        <div class="card_info">
+            <div class="card_info_row">
+                <h3 class="name">Coupon name</h3>
+                <a href="#">
+                    <img class="favourite_icon" src="img/favourite_icon.png" alt="favourite" onclick="clickOnFavourite(13); return false">
+                </a>
+            </div>
+            <div class="card_info_row">
+                <p class="description">Some brief description</p>
+                <p class="expiration">Expired in 3 days</p>
+            </div>
+            <div class="card_info_row last_row">
+                <h3 class="price">$235</h3>
+                <a href="#" class="button">Add to cart</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script>
+    function clickOnFavourite(index){
+        const img = document.getElementsByClassName('favourite_icon').item(index)
+        if (img.src.includes('favourite_icon.png')){
+            img.src = 'img/favourite_icon_green.png'
+            console.log('hello from here');
+            console.log(this.src)
+        }else{
+            img.src = 'img/favourite_icon.png'
+        }
+    }
+</script>
+</html>

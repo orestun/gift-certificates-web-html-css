@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Item details</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/item_details.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <img src="img/logo1.png" alt="logo" width=60>
+    <nav>
+        <ul>
+            <li><a href="index.html">Main</a></li>
+            <li><a href="adding_new_item.html">Add new item</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+        </ul>
+    </nav>
+    <div class="search_field">
+        <form action="#">
+            <input type="search" name="search_certificate" placeholder="Type item name to find...">
+            <select name="category" autocomplete="off">
+                <option value="" selected disabled hidden>Category</option>
+                <option value="sport">Sport</option>
+                <option value="cars">Cars</option>
+                <option value="shop">Shop</option>
+                <option value="cloth">Cloth</option>
+                <option value="cloth">Cloth</option>
+                <option value="">none</option>
+            </select>
+            <button type="submit"><img src="img/search_logo.png" alt="search_logo"></button>
+        </form>
+    </div>
+    <div class="right_panel">
+        <a href="#"><img src="img/heart2.png" alt="liked_items"></a>
+        <a href="checkout.html"><img src="img/shopping_cart.png" alt="checkout"></a>
+        <a href="login.html">Login</a>
+        <div class="vertical"></div>
+        <a href="register.html">Sign in</a>
+    </div>
+</header>
+<div class="item_details_container">
+    <div class="item_details">
+        <div class="images">
+        </div>
+
+        <div class="main_details">
+            <h3  class="details_row name">Coupon name</h3>
+            <p  class="details_row short_desc">Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam
+            </p>
+            <div class="details_row timestamp">
+                <p class="time_left">Time left to buy</p>
+                <h3 class="time">12 days 14 hours</h3>
+            </div>
+            <div  class="details_row last_row">
+                <h3 class="price">235$</h3>
+                <a href="#" class="button">Add to cart</a>
+            </div>
+        </div>
+        <div class="long_description">
+            <h1 class="long_desc_title">Item details description</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. In nibh mauris cursus
+                mattis molestie a iaculis at erat. Sed vulputate mi sit amet mauris commodo quis
+                imperdiet massa. Egestas erat imperdiet sed euismod nisi porta lorem mollis</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

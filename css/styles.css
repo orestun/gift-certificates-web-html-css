@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap');
+
+ul li{
+    display: block;
+}
+ul{
+    display: flex;
+    justify-content: left;
+}
+ul li a{
+    padding: 0 15px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 0 10px;
+}
+
+.search_field input, select, button{
+    border: 0;
+    background: white;
+    font-family: 'Chivo Mono', monospace;
+    font-size: 12px;
+}
+.search_field button img{
+    height: 12px;
+}
+.search_field button{
+    cursor: pointer;
+}
+.search_field{
+    height: 30px;
+    border: #020107 1px solid;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+}
+ul li a, .right_panel a{
+    font-family: 'Chivo Mono', monospace;
+    text-decoration-line: none;
+    color: rgb(30, 31, 34);
+    transition: all 1s;
+}
+
+.right_panel{
+    padding: 2px 2px;
+    display: inline-flex;
+    vertical-align: center;
+    align-items: center;
+}
+.right_panel a{
+    padding: 2px 4px;
+}
+.right_panel .vertical{
+    border-left: #020107 1.5px solid;
+    padding: 2px 0;
+    height: 20px;
+}
